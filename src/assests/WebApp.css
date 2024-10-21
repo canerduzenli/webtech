@@ -1,0 +1,59 @@
+
+
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+  }
+
+  .main-title-container {
+    text-align: center;
+    color: darkorange;
+    background-image: url(../images/keyboard.jpg);
+    background-size: cover;
+    background-position: cover;
+    height: 300px;
+    align-items: left;
+    padding: 100px;
+  }
+
+  h3 {
+    color: darkorange;
+  }
+
+  .main-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 150px;
+    color: radial-gradient(circle at top left, #f17a04, #f58033, #ff9966, #f05710, #ff2f00);
+  }
+
+  .linkWeb {
+    display: flex; /* Makes the links appear in a row */
+    flex-wrap: wrap; /* Allows the links to wrap to the next line if needed */
+    justify-content: center; /* Centers the links horizontally */
+    gap: 20px; /* Adds space between the links */
+    margin: 20px 0; /* Adds margin around the link section */
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+   width: 100%;
+
+  }
+  
+  .linkWeb a {
+    text-decoration: none; /* Removes the underline */
+    color: rgb(121, 120, 120); /* Set a custom color for the links */
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold; /* Makes the text bold */
+    padding: 10px; /* Adds some padding around the links */
+    transition: color 0.3s ease; /* Smooth transition when hovering */
+  }
+  
+  .linkWeb a:hover {
+    color: #e67e00; /* Change the color on hover */
+  }
+  .linkWeb h4{
+    
+  }
+  
+  .choose-content {
+    width: 250px;
+  }

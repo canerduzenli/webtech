@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Web Application Development",
+    "description": "We build scalable and secure web applications tailored to your business needs.",
+    "detail":"We specialize in building scalable, secure, and high-performance web applications tailored to your unique business needs. From dynamic websites to complex enterprise solutions, our development team delivers custom applications that enhance user experience, improve efficiency, and support long-term growth. We utilize the latest technologies and frameworks to ensure your web application is responsive, fast, and adaptable, while prioritizing security measures to protect your data and ensure compliance with industry standards. Whether you're looking to create a customer-facing platform or an internal tool, we provide end-to-end development solutions that drive results.",
+    "image": "/images/barbosa.jpg"    
+  },
+  {
+    "id": 2,
+    "title": "IT Solutions",
+    "description": "Comprehensive IT infrastructure and software solutions for businesses of all sizes.",
+    "detail":"Comprehensive IT infrastructure and software solutions tailored to meet the unique needs of businesses of all sizes. Our services include network management, cybersecurity, cloud integration, and end-to-end IT support to ensure seamless operations, enhanced security, and scalable growth. Whether you're a small business or a large enterprise, we provide innovative solutions that optimize your technology and drive your success.",
+    "image": "/images/wocin.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing",
+    "description": "Increase your online visibility and drive traffic with our digital marketing services.",
+    "image": "/images/engineering.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Virtual Mailbox Office",
+    "description": "Get a virtual office address and mail handling services for remote businesses.",
+    "image": "/images/abootalebi.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Logo Design",
+    "description": "Create a memorable brand with our professional logo design services.",
+    "image": "/images/sikkema.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Website Development & Design",
+    "description": "Build stunning and responsive websites that engage your audience and grow your business.",
+    "image": "/images/markus.jpg"
+  }
+]

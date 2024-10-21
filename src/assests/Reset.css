@@ -1,0 +1,46 @@
+/* Set the body and HTML to hide overflow */
+html, body {
+  width: 100%; /* Ensure the width of HTML and Body are set to 100% */
+  overflow-x: hidden; /* Hide any horizontal overflow */
+}
+
+
+/* Universal box-sizing to include border and padding in element size */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Set a universal margin and padding reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure no element exceeds the viewport width */
+.container, .homeContainer, .main-content, .header, .footer {
+  max-width: 100vw; /* Prevent exceeding viewport width */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* If any container has unwanted margins or padding, set them to 0 */
+.homeContainer {
+  margin: 0 auto; /* Center align container */
+  padding: 0;
+}
+
+/* Ensure all media elements (images, video) are responsive */
+img, video {
+  max-width: 100%; /* Make media elements responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Check for overflow from fixed elements */
+.navbar, .sidebar, .header {
+  width: 100%; /* Set fixed elements to 100% of viewport width */
+  overflow-x: hidden;
+}

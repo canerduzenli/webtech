@@ -1,0 +1,68 @@
+.ServiceDetailContainer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 40px 20px;
+}
+
+.ServiceDetailContainer h1{
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.ServiceDetailContainer p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px; 
+  margin: 0 auto; 
+  margin: 0 auto 30px; 
+}
+.serviceContent {
+  max-width: 800px;
+  text-align: left;
+  margin: 40px auto; 
+}
+.serviceFeatures {
+  list-style: inside square; /* İçerik listesi ikonu */
+  margin: 20px 0;
+  padding: 0;
+}
+.serviceFeatures li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Görsel stilini düzenleme */
+.serviceImage {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 20px 0; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+
+.clientTestimonial {
+  font-style: italic;
+  color: #444;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-left: 5px solid #444;
+}
+.ServiceDetailContainer {
+  padding-top: 160px; 
+}
+
+.ServiceDetailContainer h1 {
+  font-size: 24px; 
+}
+
+.ServiceDetailContainer p {
+  font-size: 14px;
+  max-width: 100%; 
+ 
+}

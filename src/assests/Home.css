@@ -1,0 +1,144 @@
+
+/* Hero Section - Container that covers the entire page */
+.heroSection   {
+  text-align: center;
+  background-image: url(../images/keyboard.jpg);
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Full viewport height */
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Padding on left and right */
+  display: flex;
+  flex-direction: column;
+  background-image: url(/public/images/david-jorre.jpg);
+}
+
+/* Hero Section Text Styles */
+.heroSection h1 {
+  color: #ee6060; /* Set text color to white */
+}
+
+.heroSection h3 {
+  font-size: 1.5rem;
+  color: #ee6060;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.content p {
+  max-width: 699px; /* Limit paragraph width */
+  text-align: center;
+  color: #ee6060; /* Softer text color for better contrast */
+  filter: brightness(100%); /* Increase brightness */
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 auto; /* Center the text */
+}
+
+/* Hero Banner Styles */
+.HeroBanner {
+  text-align: center;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+  font-weight: bold; /* Set bold font weight */
+}
+
+.HeroBanner h3 {
+  font-style: italic;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+/* Service Container */
+.serviceContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap to the next line if the screen is small */
+  gap: 50px; /* Space between the cards */
+  padding: 40px 20px; /* Increase padding for better spacing */
+
+}
+
+/* Content Section */
+.content {
+  text-align: center;
+
+  
+}
+
+.content h2 {
+  transform: skewX(-10deg);
+  color: #ee6060;
+  align-items: center;
+  text-align: center;
+}
+.content p{
+  color: rgb(58, 54, 54);
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .heroSection {
+    height: auto; /* Let height adjust based on content */
+    padding: 60px 20px;
+  }
+
+  .heroSection h1 {
+    margin-top: 100px;
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .heroSection h3 {
+    font-size: 1.25rem; /* Reduce subheading size */
+  }
+
+  .heroSection p {
+    font-size: 1.125rem; /* Adjust paragraph font size */
+    line-height: 1.5; /* Adjust line height */
+    font-style: bold;
+  }
+
+  .serviceContainer {
+    flex-direction: column; /* Stack service cards vertically */
+    gap: 40px; /* Increase gap between cards */
+  }
+
+  .content h2 {
+    font-size: 1.75rem; /* Adjust font size */
+    margin: 20px 0;
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .heroSection {
+    height: auto; /* Auto adjust height */
+    padding: 40px 20px;
+  }
+
+  .heroSection h1 {
+    font-size: 2rem; /* Smaller heading size */
+  }
+
+  .heroSection h3 {
+    font-size: 1rem; /* Smaller subheading size */
+  }
+
+  .heroSection p {
+    font-size: 1rem; /* Smaller paragraph size */
+    line-height: 1.4; /* Adjust line height */
+    padding: 0 15px; /* Add padding to prevent text from touching the edges */
+  }
+
+  .serviceContainer {
+    flex-direction: column; /* Stack service cards vertically */
+    gap: 20px; /* Space between the cards */
+  }
+
+  .content h2 {
+    font-size: 1.5rem; /* Adjust font size */
+    text-align: center;
+    align-items: center;
+  }
+}

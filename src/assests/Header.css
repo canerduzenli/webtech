@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* Header */
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed; 
+  z-index: 1000; 
+  background-color: #eae6e6;
+  opacity: 0.8;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  overflow-x: hidden;
+}
+
+.header.hidden {
+  transform: translateY(-100%); /* Move header up when hidden */
+}
+
+.header.active {
+  transform: translateY(0); /* Reset header position */
+}
+
+/* Content */
+.content {
+  padding: 20px; 
+  background-color: #f6f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+ 
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+ 
+}
+
+.nav-menu li {
+  margin: 0 10px; /* Adjust spacing between menu items */
+
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  margin-right: 25px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 650;
+  color: #ee6060;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #1b1a19;
+}
+
+/* Navbar Buttons */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Hamburger Menu Icon Lines */
+.menu-line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Change the Hamburger Icon to a Cross (X) */
+.menu-line.change:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-line.change:nth-child(2) {
+  opacity: 0; /* Hide the middle line */
+}
+
+.menu-line.change:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hide menu links on smaller screens */
+  .nav-menu {
+    display: none; /* Hide the menu links */
+    position: absolute; /* Position the menu dropdown */
+    top: 100px; /* Align below the navbar */
+    left: 0;
+    opacity: 0.95;
+    border-radius: 20px;
+    background-image: url('../images/digital.webp'); /* Add background image */
+    background-size: cover; /* Make the image cover the entire container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%;
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Display the menu links when the menu is active */
+  .nav-menu.nav-menu-active {
+    display: flex; /* Show the menu */
+  }
+
+  /* Show the hamburger menu button */
+  .menu-icon {
+    display: block; /* Show menu button on smaller screens */
+
+  }
+
+  /* Hide the menu links in the regular view */
+  .nav-menu li {
+    margin: 20px 0; /* Add margin between menu items */
+  }
+}
+
+/* Additional Responsive Design for Mobile Screens */
+@media (max-width: 480px) {
+  .nav-logo {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .nav-menu li a {
+    font-size: 16px;
+    padding: 8px 10px;
+    
+  }
+
+  .header {
+    height: 80px; /* Reduce header height on mobile */
+  }
+
+ 
+
+  .menu-icon {
+    margin-right: 40px; /* Align hamburger icon */
+    
+  }
+}

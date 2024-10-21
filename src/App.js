@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import React from 'react';
+import Home from './pages/Home';
+import Header from './components/Header';
+import ServiceCards from './pages/ServiceCards';
+import ServiceDetail from './components/ServiceDetail';
+import WebApp from './pages/WebApp'; 
+import ItSolutions from './pages/ItSolutions'; 
+import DigitalMarketing from './pages/DigitalMarketing'; 
+import VirtualMailbox from './pages/MailBox'; 
+import LogoDesign from './pages/LogoDesign'; 
+import WebsiteDevelopment from './pages/WebsiteDev'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-container">
+      <Header />
+      <Routes>
+        <Route path="/" exact element={<Home />} /> 
+        <Route path="/services" element={<ServiceCards />} /> 
+        <Route path="/services/:id" element={<ServiceDetail />} /> 
+        <Route path="/web-app" element={<WebApp />} /> 
+        <Route path="/it-solutions" element={<ItSolutions />} /> 
+        <Route path="/digital-marketing" element={<DigitalMarketing />} /> 
+        <Route path="/virtual-mailbox" element={<VirtualMailbox />} /> 
+        <Route path="/logo-design" element={<LogoDesign />} /> 
+        <Route path="/website-development" element={<WebsiteDevelopment />} /> 
+      </Routes>
     </div>
   );
 }

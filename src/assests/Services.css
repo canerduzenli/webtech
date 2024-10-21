@@ -1,0 +1,162 @@
+/* Services.css */
+
+/* Container Styling */
+.serviceContainer {
+  display: flex; /* Use Flexbox to align services */
+  justify-content: center; /* Distribute services evenly */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap; /* Wrap to new lines if needed */
+  padding: 40px; /* Add padding around the container */
+  gap: 30px; /* Space between each service item */
+  width: 100%;
+}
+
+/* Service Title */
+.serviceTitle {
+  font-size: 32px; /* Set font size for the title */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Add spacing below the title */
+}
+
+/* Individual Service Styling */
+.service {
+  margin-top: 100vh; /* Adjust this value based on your layout */
+  display: flex;
+  padding: 20px; /* Inner padding of the card */
+  transition: transform 0.2s; /* Transition effect for hover state */
+}
+
+/* Service Cards */
+.serviceCards {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center all content horizontally */
+  text-align: center;
+  transition: transform 0.2s;
+  padding: 20px;
+  border-radius: 10px; /* Round corners */
+}
+
+.ServiceImg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text Container */
+.serviceTextContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.serviceTextContainer h2 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+
+.serviceTextContainer p{
+  font-size: 14px;
+ 
+
+}
+
+/* Hover Effects */
+.serviceCards:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+/* Link Styling */
+.serviceLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.serviceLink:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Adjust service cards for tablets */
+  .serviceContainer {
+    gap: 20px; /* Reduce gap between services */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .serviceCards {
+    width: 200px; /* Increase card width for larger view */
+  }
+
+  .serviceTitle {
+    font-size: 28px; /* Reduce font size */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+  .serviceContainer {
+    flex-direction: column; /* Stack services vertically */
+    align-items: center; /* Center all items */
+  }
+
+  .serviceCards {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-bottom: 20px; /* Add margin between cards */
+  }
+
+  .ServiceImg img {
+    width: 120px; /* Adjust image size */
+    height: 120px;
+  }
+
+  .serviceTextContainer h2 {
+    font-size: 14px; /* Adjust heading size */
+  }
+
+  .serviceTextContainer p {
+    font-size: 12px; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile Specific Adjustments */
+  .serviceContainer {
+    padding: 10px; /* Reduce padding */
+    gap: 10px; /* Reduce gap between services */
+  }
+
+  .serviceCards {
+    width: 90%; /* Almost full width on mobile */
+    padding: 15px; /* Adjust inner padding */
+  }
+
+  .serviceTitle {
+    font-size: 24px; /* Smaller title */
+  }
+
+  .ServiceImg img {
+    width: 100px; /* Adjust image size */
+    height: 100px;
+  }
+
+  .serviceTextContainer h2 {
+    font-size: 12px; /* Smaller heading */
+  }
+
+  .serviceTextContainer p {
+    font-size: 10px; /* Smaller paragraph */
+  }
+}

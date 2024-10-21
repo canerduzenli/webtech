@@ -1,0 +1,60 @@
+.buttonHome {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.homeButtonContainer {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.button1, .button2 {
+  width: 200px; /* Set a fixed width for the buttons */
+  display: flex; /* Use Flexbox for better button alignment */
+  justify-content: center; /* Center text inside the button */
+  align-items: center; /* Center text vertically */
+}
+
+/* Button Element Styling */
+.button1 button, .button2 button {
+  width: 100%; /* Set the width to 100% of the parent container */
+  padding: 15px 30px; /* Adjust padding for larger buttons */
+  font-size: 16px; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  /* Darker Orange Gradient */
+  background: radial-gradient(circle at top left, #f17a04, #f58033, #ff9966, #f05710, #ff2f00);
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover transition for background and scaling */
+  opacity: 0.8;
+}
+
+/* Hover Effect for Button 1 */
+.button1 button:hover {
+  background: radial-gradient(circle at top left, #ff6600, #ff8c1a, #ff9f40, #ffb366, #ffd1a3); /* Different gradient on hover */
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+/* Hover Effect for Button 2 */
+.button2 button:hover {
+  background: radial-gradient(circle at top left, #ff9966, #ff8040, #ff704d, #ff6666, #ff3333); /* Darker reddish-orange gradient */
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+@media (max-width: 768px) {
+  .homeButtonContainer {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center; /* Center buttons */
+  }
+
+  .button1, .button2 {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
